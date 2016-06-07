@@ -1,0 +1,30 @@
+{
+logic OWL { Class: Person SubClassOf: Being
+}
+Class: 
+and
+logic CLIF
+CLIF-document
+end
+with symbolmap
+}
+then
+logic OWL
+OWL-document
+end
+
+
+logic OWL
+
+ontology Person =
+{ Class: Person SubClassOf: Being }
+end
+
+logic CLIF
+ontology Test =
+{ (and (p) (q)) }
+and
+{ (and (r) (s)) }
+end
+
+

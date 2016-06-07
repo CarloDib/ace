@@ -1,0 +1,20 @@
+Document           ::= OMSDefinition*
+Document           ::= LibraryItem*
+LibraryItem        ::= OMSDefinition | Qualification
+Qualification      ::= 'logic' LogicRef
+LogicRef           ::= IRI
+OMSDefinition      ::= OMSkeyword OMSName '=' OMS 'end'
+OMSkeyword         ::= 'ontology'
+                     | 'onto'
+                     | 'specification'
+                     | 'spec'
+                     | 'model'
+                     | 'oms'
+BasicOMS           ::= <see OWL and CLIF syntax>
+OMS                ::= '{' BasicOMS '}' 
+                     | OMSRef
+                     | OMS 'and' OMS
+                     | OMS 'then' OMS
+OMSRef             ::= IRI
+OMSName            ::= IRI
+IRI ::= <sequence of letters>
